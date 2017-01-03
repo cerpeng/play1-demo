@@ -1,0 +1,6 @@
+# Application dependencies
+
+require:
+    - play
+    - com.alibaba -> fastjson 1.1.40:
+       transitive: false

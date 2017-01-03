@@ -1,0 +1,7 @@
+.DS_Store
+documentation/
+lib/
+play1-demo.iml
+play1-demo.ipr
+play1-demo.iws
+tmp/
