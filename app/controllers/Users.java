@@ -13,10 +13,10 @@ import play.mvc.Controller;
 
 public class Users extends Controller {
     public static void add(String body) {
-        User user1 = JSON.parseObject(body, User.class);
+        User input = JSON.parseObject(body, User.class);
         User user = new User();
-        user.name = user1.name;
-        user.age = user1.age;
+        user.name = input.name;
+        user.age = input.age;
         user.save();
         renderJSON(user);
     }
@@ -29,10 +29,10 @@ public class Users extends Controller {
     }
 
     public static void update(Long id,String body) {
-        User user1 = JSON.parseObject(body, User.class);
+        User input = JSON.parseObject(body, User.class);
         User user = new User();
         user = user.findById(id);
-        user.name = user1.name;
+        user.name = input.name;
         user.save();
         renderJSON(user);
     }
