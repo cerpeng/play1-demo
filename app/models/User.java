@@ -9,6 +9,8 @@ import javax.persistence.Entity;
  */
 @Entity()
 public class User extends Model {
+
     public String name;
     public Integer age;
+    public String className;
 }

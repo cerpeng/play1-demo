@@ -32,7 +32,6 @@ public class Users extends Controller {
   }
 
   public static void list() {
-
     renderJSON(User.findAll());
   }
 }
